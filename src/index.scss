@@ -18,3 +18,27 @@ body {
   max-width: 1000px;
   overflow: auto;
 }
+
+
+.columns {
+  font-size: 14px;
+  min-width: 204px;
+  max-width: 230px;
+  flex: 0 0 100%;
+
+  li {
+    padding: 7px 12px;
+    font-weight: 400;
+
+    &:first-of-type {
+      display: flex;
+      align-items: center;
+      height: 240px;
+      background-color: transparent !important;
+    }
+
+    &:nth-of-type(2n) {
+      background: #f4f2ee;
+    }
+  }
+}
